@@ -1,0 +1,11 @@
+#!/bin/bash
+
+cfile=$CFILE
+
+basename="${cfile%.*}"
+
+outputfile="$basename.s"
+
+# Generate the assembly code using gcc with the -S flag
+gcc -S -masm=intel "$cfile" -o "$outputfile"
+
