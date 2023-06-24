@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include <time.h>
 /**
- * main - print the last digit of the number stored in the variable
+ * main - to print the last digit of the number stored in the variable n
  * Return: 0
  */
 int main(void)
@@ -11,8 +11,8 @@ int main(void)
 
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
-	if (n > 0)
-		int lastDigit = n % 10;
+	
+	int lastDigit = n % 10;
 	printf("Last digit of %d is ", n);
 	if (lastDigit > 5)
 	{
@@ -20,9 +20,9 @@ int main(void)
 	} else if (lastDigit == 0)
 	{
 		printf("%d and is 0\n", lastDigit);
-	} else
-	{
-		printf("%d and is less than 6 and not 0\n", lastDigit);
-	}
+    } else 
+    {
+	    printf("%d and is less than 6 and not 0\n", lastDigit);
+    }
 	return (0);
 }
