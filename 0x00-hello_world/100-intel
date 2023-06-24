@@ -1,6 +1,5 @@
 #!/bin/bash
 
-main.c="{$cfile%.*}"
+c_file=$CFILE
 
-outputfile="$main.s"
-
+output_file="${c_main%.*}.s"
