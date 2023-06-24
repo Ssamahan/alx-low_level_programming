@@ -1,5 +1,2 @@
 #!/bin/bash
-
-c_file=$CFILE
-
-output_file="${c_main%.*}.s"
+gcc -S -masm=intel $CFILE
