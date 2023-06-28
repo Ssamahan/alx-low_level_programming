@@ -2,16 +2,18 @@
 
 /**
  * main - a program that prints the alphabet in lowercase
- * Return: 0
+ * Return: Always 0 (SUccess)
  */
 int main(void)
-{
-	char letter;
 
-	for (letter "a"; letter <= "z"; letter++)
+{
+	char alp[26] = "abcdefghijklmnopqrstuvwxyz";
+	int i;
+
+	for (i = 0; i < 26; i++)
 	{
-		putchar(letter);
+		putchar(alp[i]);
 	}
-	putchar("\n");
+	putchar('\n');
 	return (0);
 }
