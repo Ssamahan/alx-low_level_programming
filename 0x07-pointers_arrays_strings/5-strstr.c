@@ -1,7 +1,7 @@
-
 #include "main.h"
+
 /**
- * _strstr - Entry point
+ * _strstr - locates a substring
  * @haystack: input
  * @needle: input
  * Return: Always 0 (Success)
